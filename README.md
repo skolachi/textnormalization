@@ -47,3 +47,21 @@ The car was speeding at 120 km/hr -> the car was speeding at one hundred and twe
 The expected speed of internet is 350 Mbps. -> the expected speed of internet is three hundred and fifty megabits per second
 
 I want to visit Hyderabad హైదరాబాద్ sometime this year -> i want to visit hyderabad sometime this year
+
+I have a meeting from 2:30 PM to 4:15 PM. -> i have a meeting from half past two after noon to quarter past four after noon
+
+Russia attacked Ukraine on 24/02/2022. -> russia attacked ukraine on twenty fourth of february two thousand and twenty two
+
+The national speed limit in the UK is 60 m/hr. -> the national speed limit in the united kingdom is sixty miles per hour
+
+The national speed limit in the UK is 60 mph. -> the national speed limit in the united kingdom is sixty miles per hour
+
+The normal temperature of the human body is 98.4° F. -> the normal temperature of the human body is ninety eight point four degrees fahrenheit
+
+You can reach me on 011-200-8093. -> you can reach me on zero one one two zero zero eight zero nine three
+
+What's your plan on 25/03/2022? -> what's your plan on twenty fifth of march two thousand and twenty two
+
+There are fireworks on the 4th of July every year. -> there are fireworks on the fourth of july every year
+
+I live on St. Martin st. -> i live on saint martin street
