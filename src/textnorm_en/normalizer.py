@@ -18,8 +18,8 @@ class TextNorm:
 		super(TextNorm, self).__init__()
 
 	def transform(self,text):
-		cleaned = self.clean_text(text)
-		normalised = self.normalise_text(cleaned)
+		#cleaned = self.clean_text(text)
+		normalised = self.normalise_text(text)
 		
 		return normalised
 

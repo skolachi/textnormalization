@@ -40,6 +40,7 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		#("[Dd]ec", "december"),
 		("[Dd]ept", "department"),
 		("[Dd]istrib", "distributor"),
+		("[Ee]d", "edition"),
 		("est", "established"),
 		("etc", "etcetra"),
 		("[Ee]xec", "executive"),
@@ -54,8 +55,10 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		("i\.e", "that is"),
 		("illust?", "illustration"),
 		("[Ii]ntro", "introduction"),
+		("[Ii]nc", "incorporated"),
 		#("[Jj]an", "january"),
 		("[Jj]our", "journal"),
+		("Jr", "junior"),
 		("[Ll]n", "lane"),
 		("Lieut", "lieutenant"),
 		("[Ll]td", "limited"),
@@ -76,7 +79,7 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		#("occupn", "occupation"),
 		#("[Oo]ct", "october"),
 		("[Oo]rg", "organisation"),
-		#("PM", "prime minister"), conflict with pm in time expressions
+		("PM", "prime minister"), #conflict with pm in time expressions
 		#("pm", "post meridiem"),
 		#("PM", "post meridiem"),
 		("[Pp]res", "president"),
@@ -90,6 +93,7 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		#("[Ss]ept", "september"),
 		("smth", "something"),
 		("Sqn Ldr", "squadron leader"),
+		("Sr", "senior"),
 		("St", "saint"),
 		("st", "street"),
 		("tbsp", "tablespoon"),
@@ -98,11 +102,11 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		("UK", "United Kingdom"),
 		("unabr", "unabridged"),
 		("unk", "unknown"),
-		#("US", "United States"),
+		("US", "United States"),
 		("vol", "volume"),
 		("vols", "volumes"),
 		("[Vv]s", "versus"),
-		("viz", "namely"),
+		#("viz", "namely"),
 		("wt", "weight"),
 		("WWI", "world war one"),
 		("WWII", "world war two"),
@@ -121,7 +125,6 @@ ABBREVIATIONS_COMMON = [(re.compile(r'\b%s\.?(,?)\b' % x[0]), r'%s\1 ' % x[1]) f
 		("\+", " plus"),
 		("\=", " is equal to"),
 		("\*", " times"),
-
 ]]
 
 

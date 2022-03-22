@@ -63,7 +63,7 @@ class TimeConverter:
 			else:
 				time_expansion = hours + " o'clock"
 		elif mins == '15' and secs == '00' and int(hrs) < 12:
-			time_expansion = "a quarter past %s"%(hours)
+			time_expansion = "quarter past %s"%(hours)
 			if hours in ['midnight','noon']:ampm_suffix = ''
 		elif mins == '30' and secs == '00' and int(hrs) < 12:
 			time_expansion = "half past %s"%(hours)
@@ -71,12 +71,12 @@ class TimeConverter:
 		elif mins == '45' and secs == '00' and int(hrs) < 12:
 			if hours == 'eleven':
 				if ampm_suffix == 'in the morning':
-					time_expansion = "a quarter to noon"
+					time_expansion = "quarter to noon"
 				if ampm_suffix == "at night":
-					time_expansion = "a quarter to midnight"
+					time_expansion = "quarter to midnight"
 				ampm_suffix = ''
 			else:
-				time_expansion = "a quarter to %s"%(num2words(int(hrs)+1,lang=self.lang))
+				time_expansion = "quarter to %s"%(num2words(int(hrs)+1,lang=self.lang))
 		else:
 			minutes = num2words(mins,lang=self.lang)
 			if hours in ['midnight','noon']:
