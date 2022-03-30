@@ -11,7 +11,7 @@ class NumberConverter:
 	def transform(self,text):
 		text = self.convert_phonenumbers(text)
 		text = self.convert_zipcodes(text)
-		#text = self.convert_postcodes(text)
+		text = self.convert_postcodes(text)
 		text = self.convert_ordinals(text)
 		text = self.reformat_bullet_numbers(text)
 		#text = self.convert_decimals(text)
@@ -55,7 +55,7 @@ class NumberConverter:
 
 		phone_patt3 = re.compile(r'\b(\d{3}-\d{3})\b')
 		for p in phone_patt3.finditer(text):
-			print(p.groups()[0])
+			#print(p.groups()[0])
 			number_string = self.spellout_number_pattern(p.groups()[0].replace('-',' '))
 			text = text.replace(p.groups()[0],number_string)
 
@@ -72,6 +72,7 @@ class NumberConverter:
 			
 		return number_string
 
+
 	def convert_zipcodes(self,text):
 		zipcode_patt = re.compile(r'\bcode\b[a-zA-Z ]+([0-9]{5,6})\b',re.IGNORECASE)
 		for p in zipcode_patt.finditer(text):
@@ -81,9 +82,10 @@ class NumberConverter:
 				
 		text = self.cleanup_(text)
 		return text
-	
+
+
 	def convert_postcodes(self,text):
-		postcode_patt = re.compile(r'\b([A-Z0-9]{6,8})\b')
+		postcode_patt = re.compile(r'\b([A-Z0-9]{6,15})\b')
 		for p in postcode_patt.finditer(text):
 			#print(p.groups())
 			postcode_string = self.spellout_number_pattern(p.groups()[0]) 
